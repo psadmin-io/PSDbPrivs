@@ -5224,7 +5224,7 @@ This table will store the privilges for the BGL tables and views as a master cat
         <lpSpct> POINTER
           <rowset name="RecTblSpc" size="82" count="1">
             <row>
-              <szDDLSpaceName>BISLRGE</szDDLSpaceName>
+              <szDDLSpaceName>PTTBL</szDDLSpaceName>
               <szDBName></szDBName>
               <eDBType> </eDBType>
             </row>
@@ -11858,7 +11858,7 @@ Created a page to store/view the master list of privleges for the PS tables and 
         <szCompiledRelease></szCompiledRelease>
       </row>
     </rowset>
-    <peoplecode_text>/* 
+    <peoplecode_text>/*
    BIS Modification: BIS_BGL84_DB_PRIVS_03
    Issue#:           255
    Developer:        Andrew Casey
@@ -11948,7 +11948,7 @@ End-If;
         <szCompiledRelease></szCompiledRelease>
       </row>
     </rowset>
-    <peoplecode_text>/* 
+    <peoplecode_text>/*
    BIS Modification: BIS_BGL84_DB_PRIVS_03
    Issue#:           255
    Developer:        Andrew Casey
@@ -12039,7 +12039,7 @@ End-If;
         <szCompiledRelease></szCompiledRelease>
       </row>
     </rowset>
-    <peoplecode_text>/* 
+    <peoplecode_text>/*
    BIS Modification: BIS_BGL84_DB_PRIVS_03
    Issue#:           255
    Developer:        Andrew Casey
@@ -12130,7 +12130,7 @@ End-If;
         <szCompiledRelease></szCompiledRelease>
       </row>
     </rowset>
-    <peoplecode_text>/* 
+    <peoplecode_text>/*
    BIS Modification: BIS_BGL84_DB_PRIVS_03
    Issue#:           255
    Developer:        Andrew Casey
@@ -12221,7 +12221,7 @@ End-If;
         <szCompiledRelease></szCompiledRelease>
       </row>
     </rowset>
-    <peoplecode_text>/* 
+    <peoplecode_text>/*
    BIS Modification: BIS_BGL84_DB_PRIVS_03
    Issue#:           255
    Developer:        Andrew Casey
@@ -12312,7 +12312,7 @@ End-If;
         <szCompiledRelease></szCompiledRelease>
       </row>
     </rowset>
-    <peoplecode_text>/* 
+    <peoplecode_text>/*
    BIS Modification: BIS_BGL84_DB_PRIVS
    Issue#:           76
    Developer:        Andrew Casey
@@ -12403,7 +12403,7 @@ End-If;
         <szCompiledRelease></szCompiledRelease>
       </row>
     </rowset>
-    <peoplecode_text>/* 
+    <peoplecode_text>/*
    BIS Modification: BIS_BGL84_DB_PRIVS
    Issue#:           76
    Developer:        Andrew Casey
@@ -12415,13 +12415,13 @@ import BIS_BGL:Pages:DatabasePrivs;
 Component BIS_BGL:Pages:DatabasePrivs &amp;c_aDBPrivs;
 
 If GetRowset().Level = 0 Then;
-   
+
    If &amp;c_aDBPrivs = Null Then;
       &amp;c_aDBPrivs = create BIS_BGL:Pages:DatabasePrivs();
    End-If;
-   
+
    &amp;c_aDBPrivs.saveLogic();
-   
+
 End-If;
 </peoplecode_text>
     <peoplecode_blob>kAQAAAQDAgEBAAAAvAIAAAAAAAABHkIASQBTAF8ARABCAF8AUABSAEkAVgBfAFcAUgBLAAIOQQBEAEQAXwBSAE8AVwAMEFMAYQB2AGUARQBkAGkAdAAAAAAAAAAAAAEDAAEA/wAAAAAAAAAANDIAMAAxADUALQAwADUALQAyADYALQAxADUALgA0ADgALgAwADcALgAwADYAMAA2ADQANwA0MgAwADEANQAtADAANQAtADIANgAtADEANQAuADQAOAAuADAANwAuADAANgAwADYANAA3ABBDAEEAMAAwADEANgA4ADkAAAD/FwMAAP8BAAAAJIoB/4oBAAAvACoAIAAKACAAIAAgAEIASQBTACAATQBvAGQAaQBmAGkAYwBhAHQAaQBvAG4AOgAgAEIASQBTAF8AQgBHAEwAOAA0AF8ARABCAF8AUABSAEkAVgBTAAoAIAAgACAASQBzAHMAdQBlACMAOgAgACAAIAAgACAAIAAgACAAIAAgACAANwA2AAoAIAAgACAARABlAHYAZQBsAG8AcABlAHIAOgAgACAAIAAgACAAIAAgACAAQQBuAGQAcgBlAHcAIABDAGEAcwBlAHkACgAgACAAIABEAGEAdABlADoAIAAgACAAIAAgACAAIAAgACAAIAAgACAAIAAxADkALgAwADMALgAyADAAMQA1AAoAIAAgACAARABlAHMAYwByAGkAcAB0AGkAbwBuADoAIAAgACAAIAAgACAAQQBkAGQAIABQAGUAbwBwAGwAZQBDAG8AZABlACAAdABvACAAYwBhAGwAbAAgAHQAaABlACAAYQBwAHAAIABwAGEAYwBrAGEAZwBlAC4ACgAqAC8AWAoOQgBJAFMAXwBCAEcATABXCgpQAGEAZwBlAHMAVwoaRABhAHQAYQBiAGEAcwBlAFAAcgBpAHYAcwAVLU9UCg5CAEkAUwBfAEIARwBMAFcKClAAYQBnAGUAcwBXChpEAGEAdABhAGIAYQBzAGUAUAByAGkAdgBzAAEWJgBjAF8AYQBEAEIAUAByAGkAdgBzABUtTxwKEkcAZQB0AFIAbwB3AHMAZQB0AAsUBQoKTABlAHYAZQBsAAZQEgAAAAAAAAAAAAAAAAAAAAAAAB8VTxwBFiYAYwBfAGEARABCAFAAcgBpAHYAcwAGSx8VARYmAGMAXwBhAEQAQgBQAHIAaQB2AHMABmkKDkIASQBTAF8AQgBHAEwAVwoKUABhAGcAZQBzAFcKGkQAYQB0AGEAYgBhAHMAZQBQAHIAaQB2AHMACxQVGhVPARYmAGMAXwBhAEQAQgBQAHIAaQB2AHMABQoScwBhAHYAZQBMAG8AZwBpAGMACxQVTxoVBwAA/wEAAAAA/wEAAACFHkIASQBTAF8ARABCAF8AUABSAEkAVgBfAFcAUgBLAA5BAEQARABfAFIATwBXAA5QAEEAQwBLAEEARwBFABpEAEEAVABBAEIAQQBTAEUAUABSAEkAVgBTAA5QAEEAQwBLAEEARwBFABpEAEEAVABBAEIAQQBTAEUAUABSAEkAVgBTAA==</peoplecode_blob>
@@ -12498,7 +12498,7 @@ End-If;
         <szCompiledRelease></szCompiledRelease>
       </row>
     </rowset>
-    <peoplecode_text>/* 
+    <peoplecode_text>/*
    BIS Modification: BIS_BGL84_DB_PRIVS_04
    Issue#:           255
    Developer:        Andrew Casey
@@ -12589,7 +12589,7 @@ End-If;
         <szCompiledRelease></szCompiledRelease>
       </row>
     </rowset>
-    <peoplecode_text>/* 
+    <peoplecode_text>/*
    BIS Modification: BIS_BGL84_DB_PRIVS
    Issue#:           76
    Developer:        Andrew Casey
@@ -12680,7 +12680,7 @@ End-If;
         <szCompiledRelease></szCompiledRelease>
       </row>
     </rowset>
-    <peoplecode_text>/* 
+    <peoplecode_text>/*
    BIS Modification: BIS_BGL84_DB_PRIVS
    Issue#:           76
    Developer:        Andrew Casey
@@ -12771,7 +12771,7 @@ End-If;
         <szCompiledRelease></szCompiledRelease>
       </row>
     </rowset>
-    <peoplecode_text>/* 
+    <peoplecode_text>/*
    BIS Modification: BIS_BGL84_DB_PRIVS_03
    Issue#:           248
    Developer:        Andrew Casey
@@ -14703,7 +14703,7 @@ A SQL object to grab the PS.PSDBOWNER.OWNERID value.</lpszDescrLong>
         <szCompiledRelease></szCompiledRelease>
       </row>
     </rowset>
-    <peoplecode_text>/* 
+    <peoplecode_text>/*
    BIS Modification: BIS_BGL84_DB_PRIVS
    Issue#:           76
    Developer:        Andrew Casey
@@ -14793,7 +14793,7 @@ Local Record &amp;rState = GetRecord(Record.BIS_DB_PRIV_AET);
         <szCompiledRelease></szCompiledRelease>
       </row>
     </rowset>
-    <peoplecode_text>/* 
+    <peoplecode_text>/*
    BIS Modification: BIS_BGL84_DB_PRIVS
    Issue#:           76
    Developer:        Andrew Casey
@@ -14878,7 +14878,7 @@ Local Record &amp;rState = GetRecord(Record.BIS_DB_PRIV_AET);
         <szCompiledRelease></szCompiledRelease>
       </row>
     </rowset>
-    <peoplecode_text>/* 
+    <peoplecode_text>/*
    BIS Modification: BIS_BGL84_DB_PRIVS
    Issue#:           76
    Developer:        Andrew Casey
@@ -15292,7 +15292,7 @@ Added Utilities &gt; SplitString.</lpszDescrLong>
         <szCompiledRelease></szCompiledRelease>
       </row>
     </rowset>
-    <peoplecode_text>/* 
+    <peoplecode_text>/*
    BIS Modification: BIS_BGL84_DB_PRIVS_04
    Issue#:           255
    Developer:        Andrew Casey
@@ -15315,7 +15315,7 @@ Added Utilities &gt; SplitString.</lpszDescrLong>
                      to be added to the page.
 
    BIS Modification: BIS_BGL84_DB_PRIVS_01
-   Issue#:           - 
+   Issue#:           -
    Developer:        Andrew Casey
    Date:             30/06/2016
    Description:      Modified the btnClicked method to set the cursor position on adding a new row.
@@ -15357,7 +15357,7 @@ class DatabasePrivs;
    method checkBoxClicked(&amp;rBuffer As Row);
    method savePostChangeLogic(&amp;rBuffer As Row);
    rem Andrew Casey, 24/03/2017, Issue 255, End;
-   
+
    property Record rLvl0;
    property Record rLvl0Wrk;
    property Rowset rsLvl1;
@@ -15389,14 +15389,14 @@ end-method;
   */
 method pageActivate
    Local Grid &amp;gDtls;
-   
+
    rem If there is the first row, and there is no data (most likely in add mode) then
        hide the row;
    If %This.rsLvl1.ActiveRowCount = 1 And
          None(%This.rsLvl1.GetRow(1).BIS_DB_PRIV_TBL.SQLTABLENAME.Value) Then;
       %This.rsLvl1.GetRow(1).Visible = False;
    End-If;
-   
+
    rem Andrew Casey, 24/03/2017, Issue 255, Start;
    rem %This.disablePageLogic();
    Local integer &amp;i;
@@ -15405,7 +15405,7 @@ method pageActivate
       %This.setPrivsIconLogic(%This.rsLvl1.GetRow(&amp;i));
    End-For;
    rem Andrew Casey, 24/03/2017, Issue 255, End;
-   
+
    rem blank out the column heading labels;
    &amp;gDtls = GetGrid(Page.BIS_DB_PRIVS_TABLE, Record.BIS_DB_PRIV_TBL);
    &amp;gDtls.ERROR_FLAG.Label = &quot; &quot;;
@@ -15442,7 +15442,7 @@ method btnClicked
       End-If;
       &amp;fEditFlg = %This.rsLvl1.GetRow(%This.rsLvl1.ActiveRowCount).GetRecord(@(&quot;Record.&quot; | %This.sLvl1Wrk)).EDIT_PB;
       &amp;fErrFlg = %This.rsLvl1.GetRow(%This.rsLvl1.ActiveRowCount).GetRecord(@(&quot;Record.&quot; | %This.sLvl1Wrk)).ERROR_FLAG;
-      
+
       %This.rsLvl1.GetRow(%This.rsLvl1.ActiveRowCount).BIS_DB_PRIV_TBL.SQLTABLENAME.Visible = False;
       %This.rsLvl1.GetRow(%This.rsLvl1.ActiveRowCount).BIS_DB_PRIV_TBL.BIS_DB_GRANTOR.Value = %This.sDbOwner;
       &amp;fErrFlg.Visible = False;
@@ -15478,13 +15478,13 @@ method rcdChanged
    /+ &amp;rData as Row +/
    Local Field &amp;fRecName, &amp;fTblName;
    Local Record &amp;rRecDefn = CreateRecord(Record.PSRECDEFN);
-   
+
    rem Andrew Casey, 19/12/2016, Issue 248, Start;
    rem &amp;fRecName = &amp;rData.GetRecord(@(&quot;Record.&quot; | %This.sLvl1Wrk)).RECNAME;
    &amp;fRecName = &amp;rData.GetRecord(@(&quot;Record.&quot; | %This.sLvl1Wrk)).SQLTABLENAME;
    rem Andrew Casey, 19/12/2016, Issue 248, End;
    &amp;fTblName = &amp;rData.BIS_DB_PRIV_TBL.SQLTABLENAME;
-   
+
    rem Derive the SQLTABLENAME from the PSRECDEFN table;
    If All(&amp;fRecName.Value) Then;
       &amp;rRecDefn.RECNAME.Value = &amp;fRecName.Value;
@@ -15503,7 +15503,7 @@ method rcdChanged
    Else;
       %This.resetTableName(&amp;rData);
    End-If;
-   
+
 end-method;
 
 /**
@@ -15519,13 +15519,13 @@ end-method;
 /**
   * This method is used to perform various save logic:
   *   a) make sure that at least one privilege has been selected.
-  *   b) make sure that the SQLTABLENAME has a value. 
+  *   b) make sure that the SQLTABLENAME has a value.
   */
 method saveLogic
    Local boolean &amp;bErrNoPriv, &amp;bErrNoTbl, &amp;bErrLocal;
    Local integer &amp;a;
    Local Field &amp;fRecName, &amp;fSelect, &amp;fUpdate, &amp;fDelete, &amp;fInsert;
-   
+
    For &amp;a = 1 To %This.rsLvl1.ActiveRowCount;
       &amp;bErrLocal = False;
       rem Andrew Casey, 19/12/2016, Issue 248, Start;
@@ -15536,7 +15536,7 @@ method saveLogic
       &amp;fUpdate = %This.rsLvl1.GetRow(&amp;a).BIS_DB_PRIV_TBL.UPDATE_FLAG;
       &amp;fDelete = %This.rsLvl1.GetRow(&amp;a).BIS_DB_PRIV_TBL.DELETE_FLAG;
       &amp;fInsert = %This.rsLvl1.GetRow(&amp;a).BIS_DB_PRIV_TBL.INSERT_FLAG;
-      
+
       rem Check each row that there is a least one privilege for the table;
       If &amp;fSelect.Value = &quot;0&quot; And
             &amp;fUpdate.Value = &quot;0&quot; And
@@ -15550,7 +15550,7 @@ method saveLogic
          &amp;bErrNoTbl = True;
          &amp;bErrLocal = True;
       End-If;
-      
+
       rem if there is a row in error then show the error flag;
       If &amp;bErrLocal Then;
          %This.errorIconLogic(%This.rsLvl1.GetRow(&amp;a), True);
@@ -15561,7 +15561,7 @@ method saveLogic
       %This.disableRowLogic(%This.rsLvl1.GetRow(&amp;a));
       rem Andrew Casey, 24/03/2017, Issue 255, End;
    End-For;
-   
+
    rem Trigger the error message;
    If &amp;bErrNoPriv And
          Not &amp;bErrNoTbl Then;
@@ -15577,7 +15577,7 @@ method saveLogic
          End-If;
       End-If;
    End-If;
-   
+
    rem ... and the page display;
    rem Andrew Casey, 24/03/2017, Issue 255, Start;
    rem %This.disablePageLogic();
@@ -15587,7 +15587,7 @@ end-method;
 /**
   * This method is used to perform various save logic:
   *   a) make sure that at least one privilege has been selected.
-  *   b) make sure that the SQLTABLENAME has a value. 
+  *   b) make sure that the SQLTABLENAME has a value.
   *
   * @param &amp;rRow   The row for the field being changed.
   * @param &amp;bShow  A boolean switched used to set the visibility.
@@ -15665,7 +15665,7 @@ method disableRowLogic
    &amp;fRecName.DisplayOnly = True;
    &amp;fErrFlg.Visible = False;
    &amp;fEditFlg.Visible = True;
-   
+
    rem Andrew Casey, 24/03/2017, Issue 255, Start;
    rem %This.privChkBoxLogic(%This.rsLvl1.GetRow(&amp;a), False);
    rem %This.rsLvl1.GetRow(&amp;a).DeleteEnabled = False;
@@ -15674,7 +15674,7 @@ method disableRowLogic
    %This.privChkBoxLogic(&amp;rBuffer, False);
    &amp;rBuffer.DeleteEnabled = False;
    rem Andrew Casey, 24/03/2017, Issue 255, End;
-   
+
 end-method;
 
 rem Andrew Casey, 24/03/2017, Issue 255, Start;
@@ -15684,7 +15684,7 @@ method arePrivsExistingAndCorrect
    Local Rowset &amp;rDatabasePrivs;
    Local Record &amp;rDatabasePriv;
    Local integer &amp;i;
-   
+
    &amp;rDatabasePrivs = GetLevel0()(1).GetRowset(Scroll.BIS_USR_PRIV_VW);
    For &amp;i = 1 To &amp;rDatabasePrivs.ActiveRowCount;
       &amp;rDatabasePriv = &amp;rDatabasePrivs(&amp;i).BIS_USR_PRIV_VW;
@@ -15692,7 +15692,7 @@ method arePrivsExistingAndCorrect
          Return ( Not &amp;rDatabasePriv.CompareFields(&amp;rBuffer));
       End-If;
    End-For;
-   
+
    Return True;
 end-method;
 
@@ -15731,7 +15731,7 @@ method deriveGrantsForObject
    /+ &amp;rBuffer as Record +/
    /+ Returns String +/
    Local string &amp;sGrantStmt;
-   
+
    If &amp;rBuffer.SELECT_FLAG.Value = 1 Then;
       &amp;sGrantStmt = &quot;SELECT, &quot;;
    End-If;
@@ -15744,10 +15744,10 @@ method deriveGrantsForObject
    If &amp;rBuffer.INSERT_FLAG.Value = 1 Then;
       &amp;sGrantStmt = &amp;sGrantStmt | &quot;INSERT&quot;;
    End-If;
-   
-   
+
+
    Return RTrim(&amp;sGrantStmt, &quot;, &quot;);
-   
+
 end-method;
 
 method refreshThePage
@@ -15763,7 +15763,7 @@ end-method;
 
 method savePostChangeLogic
    /+ &amp;rBuffer as Row +/
-   
+
    If &amp;rBuffer.IsDeleted Then;
       rem REVOKE ALL ON PS_BIS_TREE_1 FROM BGL_RPTG_TABLEAU;
       SQLExec(&quot;REVOKE ALL ON &quot; | &amp;rBuffer.BIS_DB_PRIV_TBL.SQLTABLENAME.Value | &quot; FROM &quot; | &amp;rBuffer.BIS_DB_PRIV_TBL.BIS_DB_GRANTEE.Value);
