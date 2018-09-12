@@ -1,6 +1,6 @@
 # PeopleSoft Database Privileges
 Store and handle database privileges for PeopleSoft tables and views
-* Built on PeopleTools 8.54
+* Built on PeopleTools 8.56
 
 1. Import the project into a target database.
 2. Build the table.
