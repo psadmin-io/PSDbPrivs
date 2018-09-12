@@ -3,12 +3,12 @@
   <instance class="PJM">
     <rowset name="PjmDefn" size="2832" count="1">
       <row>
-        <szLastUpdDttm>2018-09-12-11.32.23.029000</szLastUpdDttm>
+        <szLastUpdDttm>2018-09-12-14.38.05.649573</szLastUpdDttm>
         <szLastUpdOprId>VP1</szLastUpdOprId>
         <szObjectOwnerID></szObjectOwnerID>
         <nUseCount>1</nUseCount>
         <bUseUpdate>1</bUseUpdate>
-        <lVersion>2501</lVersion>
+        <lVersion>2503</lVersion>
         <lSwapVersion>0</lSwapVersion>
         <nSwapNum>0</nSwapNum>
         <szProjectName>IO_DATABASE_PRIVILEGES</szProjectName>
@@ -16,8 +16,8 @@
         <szProjectDescr>Database Privs</szProjectDescr>
         <szSrcDBName>EP92U027</szSrcDBName>
         <szSrcOprId>VP1</szSrcOprId>
-        <szSessionId>c567e43c-b66e-11e8-9833-dad0b90c5933</szSessionId>
-        <szRunDtTm>2018-09-12-11.32.30.029839</szRunDtTm>
+        <szSessionId>b8db099c-b688-11e8-8e47-8100679124f0</szSessionId>
+        <szRunDtTm>2018-09-12-14.38.17.650117</szRunDtTm>
         <szTgtServerName></szTgtServerName>
         <szTgtDBName>CMASBX02</szTgtDBName>
         <szTgtOprId>AN001689</szTgtOprId>
@@ -13988,12 +13988,12 @@ End-If;
   <instance class="SRM">
     <rowset name="SrmDefn" size="432" count="1">
       <row>
-        <szLastUpdDttm>2018-09-12-10.32.32.939115</szLastUpdDttm>
+        <szLastUpdDttm>2018-09-12-14.37.40.649525</szLastUpdDttm>
         <szLastUpdOprId>VP1</szLastUpdOprId>
         <szObjectOwnerId></szObjectOwnerId>
         <nUseCount>1</nUseCount>
         <bUseUpdate>1</bUseUpdate>
-        <lVersion>214</lVersion>
+        <lVersion>222</lVersion>
         <lSwapVersion>0</lSwapVersion>
         <nSwapNum>0</nSwapNum>
         <szSqlId>IO_USR_PRIV_VW</szSqlId>
@@ -14023,11 +14023,11 @@ End-If;
               <cDbType>2</cDbType>
               <szEffDt>1900-01-01</szEffDt>
               <szDescr></szDescr>
-              <lSqlTextLen>604</lSqlTextLen>
+              <lSqlTextLen>632</lSqlTextLen>
               <lpszSqlText> POINTER
-                <rowset name="char" size="604" count="1">
+                <rowset name="char" size="632" count="1">
                   <row>
-                    <lpszSqlText>SELECT * FROM ( SELECT A.GRANTEE ,A.TABLE_NAME ,A.PRIVILEGE FROM USER_TAB_PRIVS A WHERE 1 = 1 AND EXISTS ( SELECT 1 FROM USER_OBJECTS X WHERE 1 = 1 AND X.OBJECT_NAME=A.TABLE_NAME AND X.OBJECT_TYPE IN ('TABLE','VIEW') ) ) PIVOT ( COUNT(PRIVILEGE) FOR PRIVILEGE IN ('SELECT','UPDATE','DELETE','INSERT') )</lpszSqlText>
+                    <lpszSqlText>SELECT * FROM ( SELECT A.GRANTEE ,A.TABLE_NAME ,A.PRIVILEGE FROM USER_TAB_PRIVS A WHERE EXISTS ( SELECT 1 FROM USER_OBJECTS X WHERE X.OBJECT_NAME = A.TABLE_NAME AND LENGTH(X.OBJECT_NAME) &lt;= 18 AND X.OBJECT_TYPE IN ('TABLE','VIEW') ) ) PIVOT ( COUNT(PRIVILEGE) FOR PRIVILEGE IN ('SELECT','UPDATE','DELETE','INSERT') )</lpszSqlText>
                   </row>
                 </rowset>
               </lpszSqlText>
