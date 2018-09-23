@@ -58,6 +58,7 @@
             <row>
               <eObjectType>0</eObjectType>
               <szObjectValue_0>IO_DB_PRIV_EXCL</szObjectValue_0>
+              <szObjectValue_1></szObjectValue_1>
               <szObjectValue_2></szObjectValue_2>
               <szObjectValue_3></szObjectValue_3>
               <eObjectID_0>1</eObjectID_0>
