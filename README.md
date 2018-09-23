@@ -7,3 +7,4 @@ Store and handle database privileges for PeopleSoft tables and views
 3. Build the views.
 4. Run the insert statement to import the existing privileges.
 
+Note that if you want to make use of the Lookup Exclusion table, it may be better to populate this table before running step number 4. Otherwise you will need to manually remove the permissions from the table.
